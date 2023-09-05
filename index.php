@@ -40,7 +40,7 @@
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/OEIKCJ0.png" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Ryubi</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Data Minor</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -48,7 +48,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Big data developer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Bigdata - AI - Solution</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -79,7 +79,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Bigdata.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/bigdata.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -134,8 +134,18 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">
+                        <ul>
+                            <li>파이썬</li>
+                            <li>머신러닝</li>
+                            <li>딥러닝</li>
+                            <li>프로젝트 기획</li>
+                            
+                        </ul>
+                    </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">
+                        창의적 아이디어로 다수의 솔루션 개발
+                    </p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -225,7 +235,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            Seoul Korea
                             <br />
                             Clark, MO 65243
                         </p>
@@ -242,8 +252,8 @@
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">About Freelancer</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            Ryubi
+                            <a href="#">Start Bootstrap</a>
                             .
                         </p>
                     </div>
@@ -275,7 +285,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/python-1.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">web crawling API nltk flask matplotlib opencv PIL SQL HTTP </p>
+                                    <p class="mb-4">파이썬 장고, 플라스크, 머신러닝/딥러닝 기반의 솔루션 개발 경험 </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -297,7 +307,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> data analysis </h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Bigdata</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -307,7 +317,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bigdata.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">EDA NLP image processing Mongo DB Tableau Figma Kaggle
+                                    <p class="mb-4">파이썬 기반의 빅데이터 수집, 통계적 분석, 시각화로 문화누리카드 사용에 대한 제언 프로젝트
                                     </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
@@ -340,7 +350,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ai.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Machine Learning Deep Learning modeling recommender system </p>
+                                    <p class="mb-4">인공지능 기반의 영상 및 이미지 처리를 기반으로 야옹이 안전서비스 제작 </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -372,7 +382,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/front-backend.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"> HTML CSS Javascript server SSL CSR React vue</p>
+                                    <p class="mb-4"> 파이썬 자바 웹을 아우르는 하이브리스 솔루션 서비스 개발</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -404,7 +414,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ProductMgmt.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">SE(소프트웨어 엔지니어링)기반의 전략 분석 요구사항 분석 UML 등을 활용한 참신한 기획자</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -436,7 +446,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sql.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4"> MYSQL</p>
+                                    <p class="mb-4"> MYSQL 등의 DB사용도 하고자 하는 성장하는 개발자</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
