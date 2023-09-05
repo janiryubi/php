@@ -250,7 +250,7 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">About Ryubi</h4>
                         <p class="lead mb-0">
                             Ryubi
                             <a href="#">Start Bootstrap</a>
