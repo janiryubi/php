@@ -19,8 +19,8 @@ SSL php
             <div class="col-lg-3"><h1>.col-lg-3</h1></div>
             <div class="col-lg-9"><h1>.col-lg-9</h1></div>
         </div>
-
-
+        <br>
+        <br>
         <?
         // 단열주석
         /* 다열주석*/
@@ -58,7 +58,8 @@ SSL php
             }
             ?>
         </div>
-        
+        <br>
+        <br>
 
         <div class="row">
             <?php
@@ -67,11 +68,12 @@ SSL php
             $cNo=($total/$wkan);//클래스 숫자
             $cnt=$total/$cNo;//반복숫자
             for($i=0;$i<($total/$wkan);$i++){
-            $s=' <div class="col-lg-'.$cNo.'"><h1>.col-lg-'.$cNo.'</h1></div>';
-            print($s);
+                $s=' <div class="col-lg-'.$cNo.'"><h1>.col-lg-'.$cNo.'</h1></div>';
+                print($s);
             }
             ?>
         </div>
+        <br>
 
         <?php
         $total = 12;//부트스트랩 전체컬럼수
@@ -86,9 +88,10 @@ SSL php
         }
         print('</div>');
         ?>
-
+        <br>
         <?php
-        //function 함수명(매개변수){코드블럭;return 변수명}
+        //def 함수명():
+        //선언 function 함수명(매개변수){코드블럭;return 변수명}
         function makeBcol($wkan=3){
                 //$wkan=3; // 나누고 싶은칸수
                 $total=12; // 부트스트랩 전체컬럼수
@@ -114,6 +117,10 @@ SSL php
         for($kan=2;$kan<7;$kan++){
             makeBcol($kan);
         }
+
+        print('<hr>');
+
+
         $score = 75;
         $score = 10*floor($score/10);
         print($score);
@@ -130,7 +137,57 @@ SSL php
             default:
                 print('낙제');
         }
+
+        print('<hr>');
+
         ?>
         
+        <?
+        function makehr($title="개별처리"){
+            print('<hr>');
+            print('<h1>'.$title.'</h1>');
+            print('<hr>');
+        }
+        makehr();
+
+        makeBcol(2);
+        makeBcol(3);
+        makeBcol(4);
+        makeBcol(3);
+        makehr('사다리 만들기');
+        $kn=1;
+        function grid1($cNo=1,$addClass='redbox'){
+            $other=12-$cNo;
+            $s = '<div class = "row">';    
+            $s.='<div class="col-lg-'.$cNo.'"><h1>.col-md-'.$cNo.'</h1></div>'."\n";
+            $s.='<div class="col-lg-'.$other.' '.$addClass.'"><h1>.col-md-'.$other.'</h1></div>'."\n";
+            $s = '</div>';
+            print($s);
+        }
+        for ($i=11;$i>0;$i--){
+            grid1($i);
+        }
+    
+        makehr('단순배열');
+        /*단순 배열*/
+        $arr = array(1,2,국어,수학);
+            for($i=0;$i<count($arr);$i++){
+                print('<li>인덱스('.$i.'):'.$arr[$i].'</li>');
+            }
+
+        foreach($arr as $a){
+            print('<li>'.$a.'</li>');
+        }
+        makehr('연관배열');
+        /*연관 배열 key - value*/
+        $arr = array(1=>'국어',2=>'수학',5=>'영어',6=>'과학');
+            for($i=0;$i<count($arr);$i++){
+                print('<li>인덱스('.$i.'):'.$arr[$i].'</li>');
+            }
+
+        foreach($arr as $k=>$v){
+            print('<li>'.$k.':'.$v.'</li>');
+        }
+        ?>
     </body>
 </html>
