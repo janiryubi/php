@@ -19,6 +19,8 @@ SSL php
             <div class="col-lg-3"><h1>.col-lg-3</h1></div>
             <div class="col-lg-9"><h1>.col-lg-9</h1></div>
         </div>
+
+
         <?
         // 단열주석
         /* 다열주석*/
@@ -56,6 +58,7 @@ SSL php
             }
             ?>
         </div>
+        
 
         <div class="row">
             <?php
