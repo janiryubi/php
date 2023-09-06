@@ -124,6 +124,8 @@ SSL php
         $score = 75;
         $score = 10*floor($score/10);
         print($score);
+        //python에는 if elif else문을 써야하지만 php는 switch문이 있다.
+       //switch문은 변수나 표현식의 결과가 여러 개일 때 각기 다른 함수를 호출할 수 있어서 유용 
         switch($score){
             case 90:
                 print('수');
@@ -139,10 +141,12 @@ SSL php
         }
 
         print('<hr>');
+        //<br>대신 이렇게쓰면 <h1>등 간격크기 제안 가능
 
         ?>
         
         <?
+        //개별처리 글자 위 아래로 공백주기 함수로 만들어봄
         function makehr($title="개별처리"){
             print('<hr>');
             print('<h1>'.$title.'</h1>');
@@ -150,11 +154,13 @@ SSL php
         }
         makehr();
 
+        makeBcol(1);
         makeBcol(2);
         makeBcol(3);
         makeBcol(4);
-        makeBcol(3);
+        makeBcol(6);
         makehr('사다리 만들기');
+
         $kn=1;
         function grid1($cNo=1,$addClass='redbox'){
             $other=12-$cNo;
