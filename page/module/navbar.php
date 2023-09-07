@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">
-        <img src ="/assets/img/oak-tree.png" alt = "logo" height="40px">
+        <img src ="/assets/img/tree.png" alt = "logo" height="60px">
       </a>
     </div>
 
