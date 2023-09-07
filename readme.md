@@ -30,7 +30,32 @@
                 - <address
                 - <article
                 - <selction
+- 내용은 잘 적어야 하지만 문법은 조금 틀려도 오류는 잘 안뜬다 군사적 목적으로 만들어졌기 때문
 image 로드 안될 때
 - ctrl + shift + r
 
-- 내용은 잘 적어야 하지만 문법은 조금 틀려도 오류는 잘 안뜬다 군사적 목적으로 만들어졌기 때문
+
+*DATABASE -mysql
+- 데이터 베이스 생성
+CREATE DATABASE `myshop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+*테이블 생성
+```SQL
+    CREATE TABLE `myshop`.`users` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '고유키',
+    `name` VARCHAR( 128 ) NOT NULL DEFAULT '' COMMENT '이름',
+    `uid` VARCHAR( 30 ) NOT NULL DEFAULT '' COMMENT '유저아이디',
+    `upw` VARCHAR( 256 ) NOT NULL DEFAULT '' COMMENT '패스워드',
+    `uemail` VARCHAR( 256 ) NOT NULL DEFAULT '' COMMENT '이메일',
+    `status` INT NOT NULL DEFAULT '0' COMMENT '관리상태'
+    ) ENGINE = INNODB COMMENT = '유저테이블';
+```
+*테이블에서 컬럼추가
+```SQL
+    ALTER TABLE `users` ADD `status` INT UNSIGNED NOT NULL DEFAULT '0'
+```
+* 컬럼삭제
+```SQL
+    ALTER TABLE `users` DROP `status1`;
+```
+http://127.0.0.1/myadmin/
