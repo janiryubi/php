@@ -34,11 +34,12 @@
 image 로드 안될 때
 - ctrl + shift + r
 
-
+# SQL
 *DATABASE -mysql
 - 데이터 베이스 생성
+```SQL
 CREATE DATABASE `myshop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-
+```
 *테이블 생성
 ```SQL
     CREATE TABLE `myshop`.`users` (
@@ -57,5 +58,35 @@ CREATE DATABASE `myshop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 * 컬럼삭제
 ```SQL
     ALTER TABLE `users` DROP `status1`;
+```
+* 추가 insert
+```SQL
+INSERT INTO `myshop`.`users` (
+`id` ,
+`name` ,
+`uid` ,
+`upw` ,
+`uemail` ,
+`status`
+)
+VALUES (
+NULL , '홍길동', 'hong', '1234', 'hong@.aa.com', '0'
+);
+```
+*데이터 가져오기 select
+```SQL
+    SELECT id, name, uid, upw
+    FROM `users`
+    LIMIT 0 , 30
+```
+*데이터 수정
+```SQL
+    UPDATE `myshop`.`users` SET `name` = '박달재' WHERE `users`.`id` =2 LIMIT 1 ;
+```
+- `name` -> 1옆에 백틱(?) '박달재' ->작은따옴표
+
+*데이터 삭제
+```SQL
+    DELETE FROM `myshop`.`users` WHERE `users`.`id` =2 LIMIT 1 ;
 ```
 http://127.0.0.1/myadmin/
