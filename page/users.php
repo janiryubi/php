@@ -19,26 +19,27 @@ SSL php
         <div class="panel-body">
         <?php
         //모듈화
-        include('./page/module/mysql.php');
-        include('./page/module/navbar.php');
-        include('./page/module/pagehead.php');
+        include('./module/mysql.php');
+        include('./module/navbar.php');
+        include('./module/pagehead.php');
         $qry ='select id,name,uid,uemail,status from users';
         $fall = getData($qry);
         //print_r($fass);
         $heads = array('id','이름','아이디','이메일','상태','관리');
         print ('<table class ="table table-bordered">');
+
         print ('<tr>');
         foreach($heads as $head){
             print('<th>'.$head.'</th>');
         }
-        print ('<tr>');
+        print ('</tr>');
 
         print ('<tr>');
         foreach($fall as $k=>$v){
-            print('<td>'.$k.':'.$v.'</td>');
+            print('<td>'.$v.'</td>');
         }
         $btns = '<div class="btn-group">
-        <a href = "#" type="button" class="btn btn-primary">E</a>
+        <a href = "#" class="btn btn-primary">E</a>
         <button type="button" class="btn btn-warning">D</button>
         </div>';
         print('<td>'.$btns.'</td>');
@@ -48,7 +49,7 @@ SSL php
         </div>
     </div>
     <?php
-        //minclude('./module/footer.php');
+        //include('./module/footer.php');
     ?>
     </body>
 </html>
