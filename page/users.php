@@ -44,14 +44,30 @@
                 print($qry);
                 $res=getData($qry,2);
                 break;
+            case 'cdel':
+                print($get['id'].'을 삭제합니다.');
+                //1 delete를 이용한 삭제
+                $where=' where id='.$get['id'];
+                $qry='delete from users '.$where;
+                print($qry);
+                $res=getData($qry,2);
+                break;
+            case 'reco':
+                print($get['id'].'을 복구합니다.');
+                // 복구
+                $where=' where id='.$get['id'];
+                $qry='update users set status=0'.$where;
+                print($qry);
+                $res=getData($qry,2);
+                break;
         }
         $btn='<a href="/page/user.php?do=add" class="btn btn-primary">추가하기</a>';
         $title=array('Users','사용자 리스트'.$btn);
         include('./module/header.php');
         //update를 이용한 삭제일 경우
-        $qry='select id,name,uid,uemail,status from users where status>=0';
+        //$qry='select id,name,uid,uemail,status from users where status>=0';
         //삭제된 데이터도 볼 경우
-        //$qry='select id,name,uid,uemail,status from users';
+        $qry='select id,name,uid,uemail,status from users';
         $resArr=getData($qry);
         //print_r($resArr);
         $heads=array('id','이름','아이디','이메일','상태','관리');
@@ -62,8 +78,11 @@
         }
         print('</tr>');
         $row='';// 반복문 밖에서 항상 초기화에 신경쓴다.
+        //$i = 1; // id값 1-2-3순으로 정렬 -> 칸밀리는데 줄이는 것 연구------
         foreach($resArr as $fall){
             $row.='<tr>';
+            //$row.='<td>'.$i.'</td>';
+            //$i++;
             foreach($fall as $k=>$v){
                 $row.='<td>'.$v.'</td>';
             }
