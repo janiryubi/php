@@ -1,20 +1,4 @@
 <?php
-//처리부분
-print_r($_POST);
-print_r($_GET);
-$get = $_GET;
-$post = $_POST;
-switch($get['do']){
-    case 'add':
-
-        break;
-    case 'edit':
-
-        break;
-    case 'delete':
-
-        break;
-}
     $title=array('User','사용자');
     include('./module/header.php');
     include('./module/mysql.php');
@@ -30,20 +14,18 @@ switch($get['do']){
         array('status','상태','txt'),
     );
 ?>
-<form action="/page/users.php?do=add" method="POST">
-<?php foreach ($udata as $u) { ?>
-        <?php
+<form action="/page/users.php?do=edit" method="POST">
+<?php foreach ($udata as $u) { 
         $txt = '<div class="form-group row">';
         if ($u[2] != 'hidden') {
             $txt .= '<label class="col-sm-1 col-form-label" for="' . $u[0] . '">' . $u[1] . ':</label>';
         }
-        $txt .= '<div class="col-sm-11">
+        $txt.= '<div class="col-sm-11">
                     <input type="' . $u[2] . '" class="form-control"
                     name="' . $u[0] . '" value="' . $user[$u[0]] . '" >
                 </div>
             </div>';
-        echo $txt;
-        ?>
-    <?php } ?>
+        print($txt);
+    }?>
     <button type="submit" class="btn btn-default">수정하기</button>
 </form>

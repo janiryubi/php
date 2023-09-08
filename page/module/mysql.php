@@ -14,10 +14,15 @@ function getconn(){
     return $conn;
 }
 
-function getData($qry = 'select * from users'){
+function getData($qry = 'select * from users',$type='1'){
     $conn = getconn();
     $res = mysqli_query($conn,$qry);
-    $data= mysqli_fetch_assoc($res);//연관배열로
+    if ($type ==1){ //selet 라면
+        $data= mysqli_fetch_assoc($res); //연관배열로
+    }
+    else{
+        $data = $res;
+    }
     return $data;
 }
 ?>
