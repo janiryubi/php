@@ -176,7 +176,7 @@ SSL php
     
         makehr('단순배열');
         /*단순 배열*/
-        $arr = array(1,2,국어,수학);
+        $arr = array(1,2,'국어','수학');
             for($i=0;$i<count($arr);$i++){
                 print('<li>인덱스('.$i.'):'.$arr[$i].'</li>');
             }
