@@ -19,8 +19,7 @@ function getData($qry = 'select * from users',$type='1'){
     $res = mysqli_query($conn,$qry);
     if ($type ==1){ //selet 라면
         $data= mysqli_fetch_assoc($res); //연관배열로
-    }
-    else{
+    }else{
         $data = $res;
     }
     return $data;
