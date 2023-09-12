@@ -19,7 +19,7 @@
     width: auto;
     height: 240px;
     padding: 40px 50px;
-    background: url(../images/gra_bg.png) repeat-x;/* x좌표로만 중복적용 함! */
+    background: url(./images/gra_bg.png) repeat-x;/* x좌표로만 중복적용 함! */
 }
 #contents .news_type01{
     width: 245px;
@@ -35,7 +35,7 @@
 .title{
     height: 20px;
     text-indent: -9999px;
-    background: url(../images/main_title.png) no-repeat;
+    background: url(./images/main_title.png) no-repeat;
     margin-bottom: 5px;
 }
 #contents .fc .title{ background-position: 0 -20px;}
@@ -63,7 +63,7 @@
     display: inline-block;
     width: 52px;
     height: 51px;
-    background: url(../images/icon_play.png) no-repeat;
+    background: url(./images/icon_play.png) no-repeat;
     position: absolute;
     top: 75px;
     left: 100px;
@@ -104,7 +104,7 @@
 	right: 0;
 	top: 3px;
 	padding-right: 10px;
-	background: url(../images/bult.png) no-repeat 40px -60px;
+	background: url(./images/bult.png) no-repeat 40px -60px;
 }
 .main_board .board_type01 .notice li{
 	position: relative;
@@ -147,7 +147,7 @@
 	height: 118px;
 	border: 1px solid #dedede;
 	border-radius: 10px;
-	background: url(../images/main_banner.png) no-repeat;
+	background: url(./images/main_banner.png) no-repeat;
 	text-indent: -9999px;
 }
 .main_board .board_type01 .banner a{

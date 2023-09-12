@@ -22,7 +22,7 @@
 	width: 181px;
 	height: 59px;
 	text-indent: -9999px;
-	background: url(../images/logo.png) no-repeat;
+	background: url(./images/logo.png) no-repeat;
 }
 
 /***** 메뉴작업 *****/
@@ -56,7 +56,7 @@
 	font-weight: bold;
 	font-size: 16px;
 	padding-left: 30px;
-	background: url(../images/gnb_bult.png) no-repeat;
+	background: url(./images/gnb_bult.png) no-repeat;
 }
 #header .gnb li a>span.m01{ background-position: 0 0 ; }
 #header .gnb li a>span.m02{ background-position: 0 -22px ; }
@@ -133,7 +133,7 @@
 }
 .btn{
 	display: inline-block;
-	background: url(../images/btn.png) no-repeat;
+	background: url(./images/btn.png) no-repeat;
 	text-indent: -9999px;
 }
 .btn a{
