@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import "reset.css";
+
+/**********************************
+기본 레이아웃
+**********************************/
+#wrap{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+/***** 상단영역 *****/
+#header{
+	position: relative;
+	width: 970px;
+	height: 140px;
+	margin: auto;
+	/* border: 1px solid red; */
+}
+#header h1{
+	width: 181px;
+	height: 59px;
+	text-indent: -9999px;
+	background: url(../images/logo.png) no-repeat;
+}
+
+/***** 메뉴작업 *****/
+#header .gnb{ /* ul을 의미하며, 이것을 header의 아래쪽에 붙여 놓는다. */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	font-size: 0px; /* 안쪽의 요소(li)가 inline-block으로 설정 시
+					글꼴의 크기와 연관되어 간격이 생기므로 글꼴 크기를 없앤다. */
+}
+#header .gnb li{
+	display: inline-block;
+	width: 194px;
+	height: 100%; /* 50px; */
+	background-color: #ff5001;
+}
+#header .gnb li a{
+	display: block;
+	height: 100%;
+	width: auto;
+	text-align: center;
+}
+#header .gnb li a>span.menu{
+	display: inline-block;
+	height: 20px;
+	margin-top: 14px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 30px;
+	background: url(../images/gnb_bult.png) no-repeat;
+}
+#header .gnb li a>span.m01{ background-position: 0 0 ; }
+#header .gnb li a>span.m02{ background-position: 0 -22px ; }
+#header .gnb li a>span.m03{ background-position: 0 -44px ; }
+#header .gnb li a>span.m04{ background-position: 0 -66px ; }
+#header .gnb li a>span.m05{ background-position: 0 -88px ; }
+#header .gnb li:hover{
+	background-color: #E24C09;
+}
+
+/************ 푸터 영역 ************/
+#footer{
+	width: auto;
+	/*padding: 40px 0px 50px 0px; *//*  위쪽  오른쪽   아래쪽   왼쪽  */
+	padding: 40px 0px 50px; /* 위쪽    좌/우    아래쪽  */
+	background: #eee;
+	margin-top: 60px;
+}
+#footer .footer_area{
+	width: 900px;
+	margin: auto;
+}
+#footer .footer_guide{
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+#footer .footer_guide li{
+	float: left;
+	padding: 0 10px;
+	border-right: 1px solid #999;
+}
+#footer .footer_guide li:last-child{ /* li태그들 중 가장 마지막에 있는 요소 */
+	border-right: none;
+}
+#footer .footer_guide li a{
+	color: #777;
+	font-size: 12px;
+	font-weight: bold;
+}
+#footer .footer_guide li a:hover{ color: #FF4F00; }
+#footer address{
+	font-size: 12px;
+	color: #777;
+	padding-bottom: 6px;
+}
+#footer .copyright { font-size: 11px; }
+
+
+/**********************************
+기타 스타일
+**********************************/
+.ellip{ /* 문자열을 공간에 맞도록 표현 및 줄임표 */
+	display: inline-block;
+	width: 97%;
+	white-space: nowrap;/* 스페이스바, 탭 줄바꿈 등을 공백 1칸으로 표시 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fclear{
+	float: none;
+	clear: both;
+	display: block;
+	height: 0 !important;
+}
+
+/**********************************
+버튼 스타일
+**********************************/
+.btnArea_right{
+	float: right;
+}
+.btn-center{
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	background: url(../images/btn.png) no-repeat;
+	text-indent: -9999px;
+}
+.btn a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.b_login{ /* 로그인 버튼 */
+	width: 86px;
+	height: 56px;
+	background-position: 0 0;
+}
+.b_search{ /* 아이디비밀번호찾기 버튼 */
+	width: 157px;
+	height: 30px;
+	background-position: -100px 0;
+	margin-left: 40px;
+}
+
+/**********************************
+폼 스타일
+**********************************/
+input[type=checkbox]{ /* input태그들 중 속성이 type=checkbox로 된 요소들 적용 */
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
