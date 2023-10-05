@@ -8,12 +8,12 @@
         <title>Liveway</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /><!--라이브커머스 아이콘으로 변경-->
-        <!-- Font Awesome icons (free version)-->
+        <!-- Font Awesome icons (free version) font-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS (includes Bootstrap) jquary bootstrap-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/OEIKCJ0.png" alt="..." /><!--사진-->
+                <img class="masthead-avatar mb-5" srgj="assets/img/OEIKCJ0.png" alt="..." /><!--사진-->
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0"> Liveway</h1>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -51,7 +51,7 @@
                         <div class="carousel-item active">
                             <img src=".\main\1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>...</h5> <!--여기 설명 넣을 수 있음-->
+                                <h5>LIVEWAY는 이런 것을 추구합니다</h5> <!--여기 설명 넣을 수 있음-->
                                 <p>...</p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-microphone"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
