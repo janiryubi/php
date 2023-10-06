@@ -12,16 +12,16 @@
         $(function(){ //ajax
             $("#btn3").click(function(){
                 //form 값을 serialize
-                let fdata = $("#form").serialize();
-                console.log(fdata);
+                let fdata=$("#form").serialize();
+                console.log('폼시리얼라이즈:',fdata);
                 //ajax로 데이터 전송
-                $.ajax({
+                $.ajax({//json / object 형태
                     url:'getcoupon.php',
                     data:fdata,
                     type:'POST',
                     dataType:'html',
-                    success:function(result){//성공했을 때
-                        console.log(result)
+                    success:function(result){// 성공했을때
+                        console.log('돌아온결과:',result)
                         $("#tbl tbody").append(result);
                     },
                     error:function(e){
@@ -35,7 +35,7 @@
     <body>
         <h1>Coupon</h1>
         <button id = "btn3">쿠폰에 입력해줘!</button>
-        <form>
+        <form id = "form">
             <ul>
                 <li><label>no</label>
                     <input name = "no" id = "no" value = "#123456789">
@@ -48,6 +48,12 @@
                 </li>
                 <li><label>유효기간</label>
                     <input name = "till" id = "till" value = "2023-01-01">
+                    <?
+                    //단방향 암호화 기술 md5 -> 역방향으로 알아낼 수 없음
+                    //양방향 -> key/value로 해서 역방향으로 알아낼 수 있음, 보안레벨 낮음
+                    $hashcode=md5('아시아경제');
+                    ?>
+                    <input type = "hidden" name = "hash" id = "hash" value = "<?=$hashcode?>">
                 </li>
             </ul>
         </form>
@@ -72,10 +78,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div id="div2">
-        </div>
-        <div id="div3">
         </div>
         
     </body>
