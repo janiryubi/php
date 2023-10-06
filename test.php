@@ -51,9 +51,10 @@
                     <?
                     //단방향 암호화 기술 md5 -> 역방향으로 알아낼 수 없음
                     //양방향 -> key/value로 해서 역방향으로 알아낼 수 있음, 보안레벨 낮음
+                    $data=date("YYYYMMDDHHiiss");
                     $hashcode=md5('아시아경제');
                     ?>
-                    <input type = "hidden" name = "hash" id = "hash" value = "<?=$hashcode?>">
+                    <input type = "text" name = "hash" id = "hash" value = "<?=$hashcode?>">
                 </li>
             </ul>
         </form>
